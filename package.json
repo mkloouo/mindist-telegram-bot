@@ -3,9 +3,11 @@
   "name": "mindist-telegram-bot",
   "version": "1.0.0",
   "description": "Mindist.io Telegram bot.",
-  "main": "./src/index.ts",
+  "main": "build/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "tsc-watch": "tsc --watch",
+    "nodemon": "nodemon ./build/index.js",
+    "mongo": "mongod --dbpath ./database --port 27018"
   },
   "keywords": [
     "mindist",
@@ -23,11 +25,15 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "mongodb": "^4.2.1",
     "node-telegram-bot-api": "^0.56.0",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^16.11.12",
     "@types/node-telegram-bot-api": "^0.53.2",
+    "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "typescript": "^4.6.0-dev.20211210"
   }
