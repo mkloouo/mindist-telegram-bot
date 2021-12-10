@@ -3,11 +3,12 @@
 ### Installing
 
 ```bash
-npm install # yarn install
+npm install
 ```
 
 ### Running
 
 ```bash
-npm start # yarn start
+npm run tsc-watch
+npm run nodemon
 ```
