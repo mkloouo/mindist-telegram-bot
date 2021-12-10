@@ -1,5 +1,5 @@
-import { config } from 'dotenv';
+import { env } from './env';
 import { bot } from './bot';
 
-config();
+env();
 bot.start();

@@ -123,3 +123,6 @@ dist
 # build files
 /build
 /dist
+
+# res files
+/res
